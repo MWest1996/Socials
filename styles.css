@@ -38,12 +38,14 @@ body{
     padding: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     font-family: var(--font-body);
 }
 
 .maincontainer{
     text-align: center;
     width: 325px;
+    height: 610px;
     margin: auto;
     background-color: var(--color-medium-grey);
     color: var(--color-white);
@@ -53,6 +55,7 @@ body{
 img{
     border-radius: 50%;
     margin: 2rem auto;
+    width: 40%;
 }
 
 /* Info formatting */
@@ -123,13 +126,13 @@ img{
 
 /*footer stuff*/
 
-.credits{
-    margin-top: 2rem;
-    font-size: 11px;
+aside{
+    font-size: .65rem;
     text-align: center;
+    padding-top: 1rem;
     color: var(--color-white);
 }
 
-.credits a{
+aside a{
     color: hsl(228, 45%, 44%)
 }
