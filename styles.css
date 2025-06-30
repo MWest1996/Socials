@@ -1,0 +1,135 @@
+:root{
+    --color-green: #c5f82a;
+    --color-white: #ffffff;
+    --color-light-grey:  #333333;
+    --color-medium-grey: #1f1f1f;
+    --color-dark-grey: #141414;
+    --color-reddit: #ff4500;
+    --color-linkedin: #0072b1;
+    --color-x: #26a7de;
+    --color-github: #104c35;
+    --color-instagram: #962fbf;
+    --font-body: 'InterRegular', 'segoe ui', 'araial', 'helvetica', 'sans-serif';
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: InterSemiBold;
+    src: url(assets/fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: InterVariable;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    background-color: var(--color-dark-grey);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    font-family: var(--font-body);
+}
+
+.maincontainer{
+    text-align: center;
+    width: 325px;
+    margin: auto;
+    background-color: var(--color-medium-grey);
+    color: var(--color-white);
+    border-radius: 15px;
+}
+
+img{
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+/* Info formatting */
+
+.name{
+    margin: auto;
+    font-family: var(--font-body);
+    font-weight: 600
+}
+
+.location{
+    padding: 0;
+    color: var(--color-green);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+}
+
+.tag{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--font-body);
+}
+
+/* Button Stuff */
+
+.buttons{
+    background-color: var(--color-light-grey);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    font-family: var(--font-body);
+    width: 225px;
+}
+
+#redditLink:hover{
+    background-color: var(--color-reddit);
+}
+
+#linkedinLink:hover{
+    background-color: var(--color-linkedin);
+}
+
+#githubLink:hover{
+    background-color: var(--color-github);
+    color:black;
+}
+
+#instagramLink:hover{
+    background-color: var(--color-instagram);
+}
+
+#xLink:hover{
+    background-color:var(--color-x);
+}
+
+.buttons a,
+.buttons a:active,
+.buttons a:visited{
+    text-decoration: none;
+    color:var(--color-white);
+}
+
+/*footer stuff*/
+
+.credits{
+    margin-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.credits a{
+    color: hsl(228, 45%, 44%)
+}
