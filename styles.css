@@ -53,7 +53,7 @@ body{
 }
 
 img{
-    border-radius: 50%;
+    border-radius: 100%;
     margin: 1rem auto;
     margin-bottom: .25rem;
     width: 40%;
